@@ -9,3 +9,5 @@ replace.js
 replace.cjs
 test_requests.mjs
 test_verify.mjs
+
+push_to_github.bat

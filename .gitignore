@@ -1,0 +1,11 @@
+.env
+.env.*
+node_modules/
+data/leads.json
+data/consultations.json
+data/subscribers.json
+*.log
+replace.js
+replace.cjs
+test_requests.mjs
+test_verify.mjs

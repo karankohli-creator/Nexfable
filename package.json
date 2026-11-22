@@ -1,0 +1,23 @@
+{
+  "name": "growth-orbit-marketing",
+  "version": "2.0.0",
+  "description": "Growth Orbit Marketing - Real Estate Digital Marketing & Lead Generation Agency",
+  "main": "server.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs"
+  },
+  "keywords": [
+    "real-estate-marketing",
+    "lead-generation",
+    "realtor-leads",
+    "meta-ads-real-estate",
+    "google-ads-realtors",
+    "real-estate-crm",
+    "growth-orbit-marketing"
+  ],
+  "author": "Growth Orbit Marketing",
+  "license": "UNLICENSED",
+  "private": true
+}

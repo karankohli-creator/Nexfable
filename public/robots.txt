@@ -1,0 +1,14 @@
+# robots.txt for Nexfable — https://nexfable.in/
+# Authoritative instructions for search engine crawlers
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /data/
+
+# Prohibit crawling of private/temp files
+Disallow: /*.json$
+Disallow: /*.env$
+
+# Search Engine Sitemaps
+Sitemap: https://nexfable.in/sitemap.xml

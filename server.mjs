@@ -404,22 +404,35 @@ const server = http.createServer(async (req, res) => {
         res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
         fs.createReadStream(notFoundPath).pipe(res);
       } else {
-        res.writeHead(404, { 'Content-Type': 'text/plain' });
-        res.end('404 Not Found - Growth Orbit Marketing');
+        res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+        res.end('404 Not Found - Nexfable');
       }
       return;
     }
 
     const ext = path.extname(normalizedFilePath).toLowerCase();
     const contentType = MIME_TYPES[ext] || 'application/octet-stream';
+    
+    // SEO & Performance Optimized Caching Headers
+    let cacheControl = 'public, max-age=86400';
+    if (ext === '.html') {
+      cacheControl = 'no-cache, must-revalidate';
+    } else if (['.png', '.jpg', '.jpeg', '.webp', '.svg', '.ico', '.woff', '.woff2'].includes(ext)) {
+      cacheControl = 'public, max-age=604800, stale-while-revalidate=86400';
+    } else if (['.css', '.js', '.mjs'].includes(ext)) {
+      cacheControl = 'public, max-age=604800, stale-while-revalidate=86400';
+    } else if (ext === '.xml' || ext === '.txt') {
+      cacheControl = 'public, max-age=3600';
+    }
+
     res.writeHead(200, {
       'Content-Type': contentType,
-      'Cache-Control': ext === '.html' ? 'no-cache' : 'public, max-age=86400'
+      'Cache-Control': cacheControl
     });
     fs.createReadStream(normalizedFilePath).pipe(res);
   });
 });
 
 server.listen(PORT, '0.0.0.0', () => {
-  console.log(`Growth Orbit Marketing Server running on http://localhost:${PORT} and http://127.0.0.1:${PORT}`);
+  console.log(`Nexfable Server running on http://localhost:${PORT} and http://127.0.0.1:${PORT}`);
 });

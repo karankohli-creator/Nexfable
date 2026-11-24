@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <!-- Nexfable Homepage -->
+  <!-- NexFable Official Homepage -->
   <url>
     <loc>https://nexfable.in/</loc>
     <lastmod>2026-11-24</lastmod>
@@ -9,16 +9,16 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://nexfable.in/public/images/nexfable-horizontal.png</image:loc>
-      <image:title>Nexfable - Digital Growth Made Easy | Official Website</image:title>
-      <image:caption>Nexfable Digital Marketing Agency brand identity</image:caption>
+      <image:title>NexFable - Web &amp; Mobile App Development &amp; Digital Growth | Official Website</image:title>
+      <image:caption>NexFable Digital Marketing Agency brand identity</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://nexfable.in/public/images/nexfable-symbol.png</image:loc>
-      <image:title>Nexfable Geometric Ribbon Logo</image:title>
+      <image:title>NexFable Geometric Ribbon Logo</image:title>
     </image:image>
   </url>
 
-  <!-- About Nexfable Page -->
+  <!-- About NexFable Page -->
   <url>
     <loc>https://nexfable.in/about</loc>
     <lastmod>2026-11-24</lastmod>
@@ -26,7 +26,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://nexfable.in/public/images/nexfable-horizontal.png</image:loc>
-      <image:title>About Nexfable - Digital Marketing Agency</image:title>
+      <image:title>About NexFable - Web &amp; Mobile App Development Agency</image:title>
     </image:image>
   </url>
 </urlset>

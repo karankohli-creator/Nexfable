@@ -37,8 +37,6 @@
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@nexfable">
-  <meta name="twitter:creator" content="@nexfable">
   <meta name="twitter:title" content="NexFable | Web & Mobile App Development & Digital Marketing Agency">
   <meta name="twitter:description" content="Official website of NexFable: Leading digital agency specializing in bespoke web & mobile app development, SEO, and performance marketing.">
   <meta name="twitter:image" content="https://nexfable.in/public/images/nexfable-horizontal.png">
@@ -57,9 +55,13 @@
         "@type": "Organization",
         "@id": "https://nexfable.in/#organization",
         "name": "NexFable",
-        "alternateName": ["Nexfable", "NexFable Agency", "NexFable Digital", "NexFable Official"],
+        "alternateName": ["NexFable Agency", "NexFable Digital", "NexFable Official"],
         "legalName": "NexFable",
         "url": "https://nexfable.in/",
+        "email": "info@nexfable.in",
+        "sameAs": [
+          "https://www.instagram.com/nex.fable/"
+        ],
         "logo": {
           "@type": "ImageObject",
           "@id": "https://nexfable.in/#logo",
@@ -70,12 +72,13 @@
           "height": 630
         },
         "image": "https://nexfable.in/public/images/nexfable-horizontal.png",
-        "description": "NexFable is a specialized web & mobile app development and digital marketing agency delivering custom web platforms, mobile applications, SEO, and performance marketing.",
+        "description": "NexFable is a specialized web & mobile app development and digital marketing agency delivering custom web platforms, mobile applications, UI/UX design, SEO, and performance marketing.",
         "telephone": "+918882370875",
         "contactPoint": [
           {
             "@type": "ContactPoint",
             "telephone": "+918882370875",
+            "email": "info@nexfable.in",
             "contactType": "customer service",
             "availableLanguage": ["English", "Hindi"],
             "areaServed": "IN"
@@ -238,7 +241,8 @@
 
   <!-- Core & Theme Styles -->
   <link rel="stylesheet" href="public/css/main.css?v=2">
-  <link rel="stylesheet" href="public/css/oob-theme.css?v=2">
+  <link rel="stylesheet" href="public/css/oob-theme.css?v=3">
+  <link rel="stylesheet" href="public/css/nexfable-enhancements.css?v=1">
 
   <style>
     .site-header {
@@ -381,6 +385,8 @@
 
 <body class="theme-space dark-mode">
 
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- Background Canvas for Ambient Particles -->
   <canvas id="space-canvas" aria-hidden="true"></canvas>
 
@@ -390,13 +396,13 @@
   <header class="site-header" role="banner">
     <div class="container nav-container">
 
-      <!-- Approved Nexfable Brand Logo -->
-      <a href="#hero" class="brand-logo" aria-label="Nexfable Home">
+      <!-- Approved NexFable Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="NexFable Home">
         <span class="brand-logo-symbol">
           <img src="public/images/nexfable-symbol.png" alt="" class="logo-symbol-img" width="60" height="34">
         </span>
         <span class="brand-logo-wordmark">
-          <img src="public/images/nexfable-wordmark.png" alt="Nexfable" class="logo-wordmark-img" width="135" height="26">
+          <img src="public/images/nexfable-wordmark.png" alt="NexFable" class="logo-wordmark-img" width="135" height="26">
         </span>
       </a>
 
@@ -405,9 +411,9 @@
         <ul class="nav-menu">
           <li><a href="#hero" class="nav-link active">Home</a></li>
           <li><a href="/about" class="nav-link">About</a></li>
-          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="/services" class="nav-link">Services</a></li>
           <li><a href="#approach" class="nav-link">Our Approach</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="/contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
@@ -432,12 +438,12 @@
   <!-- Mobile Navigation Drawer -->
   <div class="mobile-nav-drawer" id="mobile-drawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
     <div class="drawer-header">
-      <a href="#hero" class="brand-logo mobile-drawer-brand" aria-label="Nexfable Home">
+      <a href="#hero" class="brand-logo mobile-drawer-brand" aria-label="NexFable Home">
         <span class="brand-logo-symbol">
           <img src="public/images/nexfable-symbol.png" alt="" class="logo-symbol-img" width="50" height="28">
         </span>
         <span class="brand-logo-wordmark">
-          <img src="public/images/nexfable-wordmark.png" alt="Nexfable" class="logo-wordmark-img" width="109" height="21">
+          <img src="public/images/nexfable-wordmark.png" alt="NexFable" class="logo-wordmark-img" width="109" height="21">
         </span>
       </a>
       <button class="drawer-close-btn" aria-label="Close navigation">&times;</button>
@@ -445,9 +451,9 @@
     <ul class="mobile-nav-list">
       <li><a href="#hero" class="mobile-nav-link">Home</a></li>
       <li><a href="/about" class="mobile-nav-link">About</a></li>
-      <li><a href="#services" class="mobile-nav-link">Services</a></li>
+      <li><a href="/services" class="mobile-nav-link">Services</a></li>
       <li><a href="#approach" class="mobile-nav-link">Our Approach</a></li>
-      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      <li><a href="/contact" class="mobile-nav-link">Contact</a></li>
     </ul>
     <div class="drawer-cta-box" style="display: flex; flex-direction: column; gap: 12px; margin-top: 24px;">
       <a href="#contact" class="btn btn-primary mobile-nav-link" style="width: 100%; justify-content: center;">
@@ -473,29 +479,29 @@
         <div class="hero-content">
 
           <!-- Introductory Eyebrow -->
-          <div class="hero-eyebrow" style="display: inline-flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; font-weight: 600; color: #CCFF00; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 20px;">
+          <div class="hero-eyebrow hero-animate-1" style="display: inline-flex; align-items: center; gap: 8px; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; font-weight: 600; color: #CCFF00; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 20px;">
             <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #CCFF00; box-shadow: 0 0 10px #CCFF00;"></span>
             NEXFABLE &bull; WEB &amp; MOBILE APP DEVELOPMENT &bull; DIGITAL GROWTH
           </div>
 
           <!-- Primary Headline -->
-          <h1 class="hero-headline" style="font-family: 'Syne', sans-serif; font-size: clamp(2.8rem, 5.5vw, 4.8rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase; color: #FFFFFF; margin: 0 0 18px 0;">
+          <h1 class="hero-headline hero-animate-2" style="font-family: 'Syne', sans-serif; font-size: clamp(2.8rem, 5.5vw, 4.8rem); font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase; color: #FFFFFF; margin: 0 0 18px 0;">
             <span class="sr-only" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;">NexFable Official &bull; </span>DIGITAL GROWTH,<br>
             <span class="gradient-text">MADE EASY.</span>
           </h1>
 
           <!-- Secondary Headline -->
-          <h2 class="hero-subheadline" style="font-family: 'Syne', sans-serif; font-size: clamp(1.2rem, 2.2vw, 1.6rem); font-weight: 600; color: #FF55AD; margin: 0 0 20px 0; letter-spacing: -0.01em;">
+          <h2 class="hero-subheadline hero-animate-3" style="font-family: 'Syne', sans-serif; font-size: clamp(1.2rem, 2.2vw, 1.6rem); font-weight: 600; color: #FF55AD; margin: 0 0 20px 0; letter-spacing: -0.01em;">
             Modern web &amp; mobile app development that moves the needle.
           </h2>
 
           <!-- Supporting Paragraph -->
-          <p class="hero-lead" style="font-size: clamp(1.02rem, 1.4vw, 1.15rem); line-height: 1.65; color: #D7D1E0; max-width: 540px; margin: 0 0 32px 0;">
+          <p class="hero-lead hero-animate-3" style="font-size: clamp(1.02rem, 1.4vw, 1.15rem); line-height: 1.65; color: #D7D1E0; max-width: 540px; margin: 0 0 32px 0;">
             NexFable helps ambitious brands launch, scale and lead through bespoke web development, mobile applications, smart performance strategies, and bold creative thinking. Real impact, not vanity metrics.
           </p>
 
           <!-- CTAs & Direct Contact -->
-          <div class="hero-cta-group" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px;">
+          <div class="hero-cta-group hero-animate-4" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px;">
             <a href="#contact" class="btn btn-primary hero-cta-btn">
               <span>LET'S TALK GROWTH</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
@@ -543,7 +549,7 @@
         <div class="value-cards-grid">
 
           <!-- Card 1: Support That Stays -->
-          <div class="value-card">
+          <div class="value-card nf-reveal nf-stagger-1">
             <div class="value-card-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
@@ -555,7 +561,7 @@
           </div>
 
           <!-- Card 2: Agile by Design -->
-          <div class="value-card">
+          <div class="value-card nf-reveal nf-stagger-2">
             <div class="value-card-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
@@ -566,7 +572,7 @@
           </div>
 
           <!-- Card 3: Built Around You -->
-          <div class="value-card">
+          <div class="value-card nf-reveal nf-stagger-3">
             <div class="value-card-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path>
@@ -577,7 +583,7 @@
           </div>
 
           <!-- Card 4: Impact Over Impressions -->
-          <div class="value-card">
+          <div class="value-card nf-reveal nf-stagger-4">
             <div class="value-card-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"></circle>
@@ -616,7 +622,7 @@
         <div class="services-clean-grid">
 
           <!-- Service 1: Social Media Management -->
-          <div class="service-clean-card">
+          <div class="service-clean-card nf-reveal nf-stagger-1">
             <div class="service-card-header">
               <div class="service-clean-icon">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -646,10 +652,11 @@
                 <span>Organic growth and engagement</span>
               </li>
             </ul>
+            <a href="/services/social-media-management" class="service-card-link">Explore Social Media <span aria-hidden="true">&rarr;</span></a>
           </div>
 
           <!-- Service 2: Content Strategy & Creation -->
-          <div class="service-clean-card">
+          <div class="service-clean-card nf-reveal nf-stagger-2">
             <div class="service-card-header">
               <div class="service-clean-icon">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -682,10 +689,11 @@
                 <span>Campaign concepts and content pillars</span>
               </li>
             </ul>
+            <a href="/services" class="service-card-link">View All Services <span aria-hidden="true">&rarr;</span></a>
           </div>
 
           <!-- Service 3: Performance Marketing -->
-          <div class="service-clean-card">
+          <div class="service-clean-card nf-reveal nf-stagger-3">
             <div class="service-card-header">
               <div class="service-clean-icon">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -716,10 +724,11 @@
                 <span>Performance reporting and insights</span>
               </li>
             </ul>
+            <a href="/services/performance-marketing" class="service-card-link">Explore Performance <span aria-hidden="true">&rarr;</span></a>
           </div>
 
           <!-- Service 4: Lead Generation -->
-          <div class="service-clean-card">
+          <div class="service-clean-card nf-reveal nf-stagger-4">
             <div class="service-card-header">
               <div class="service-clean-icon">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -752,10 +761,11 @@
                 <span>Funnel planning and optimisation</span>
               </li>
             </ul>
+            <a href="/services/web-application-development" class="service-card-link">Explore Web Apps <span aria-hidden="true">&rarr;</span></a>
           </div>
 
           <!-- Service 5: Search Engine Optimisation -->
-          <div class="service-clean-card">
+          <div class="service-clean-card nf-reveal nf-stagger-5">
             <div class="service-card-header">
               <div class="service-clean-icon">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -786,10 +796,11 @@
                 <span>Organic visibility and performance analysis</span>
               </li>
             </ul>
+            <a href="/services/seo-services" class="service-card-link">Explore SEO Services <span aria-hidden="true">&rarr;</span></a>
           </div>
 
           <!-- Service 6: Website Design & Development -->
-          <div class="service-clean-card">
+          <div class="service-clean-card nf-reveal nf-stagger-6">
             <div class="service-card-header">
               <div class="service-clean-icon">
                 <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -821,6 +832,11 @@
                 <span>Website development and optimisation</span>
               </li>
             </ul>
+            <div style="display: flex; flex-wrap: wrap; gap: 16px;">
+              <a href="/services/website-development" class="service-card-link">Web Dev <span aria-hidden="true">&rarr;</span></a>
+              <a href="/services/mobile-app-development" class="service-card-link">Mobile Apps <span aria-hidden="true">&rarr;</span></a>
+              <a href="/services/ui-ux-design" class="service-card-link">UI/UX <span aria-hidden="true">&rarr;</span></a>
+            </div>
           </div>
 
         </div>
@@ -851,7 +867,7 @@
         <div class="approach-journey-grid">
 
           <!-- Stage 1: Discover -->
-          <div class="approach-stage-card">
+          <div class="approach-stage-card nf-reveal nf-stagger-1">
             <div class="approach-stage-number">01</div>
             <h3 class="approach-stage-title">DISCOVER</h3>
             <p class="approach-stage-desc">
@@ -860,7 +876,7 @@
           </div>
 
           <!-- Stage 2: Imagine -->
-          <div class="approach-stage-card">
+          <div class="approach-stage-card nf-reveal nf-stagger-2">
             <div class="approach-stage-number">02</div>
             <h3 class="approach-stage-title">IMAGINE</h3>
             <p class="approach-stage-desc">
@@ -869,7 +885,7 @@
           </div>
 
           <!-- Stage 3: Create -->
-          <div class="approach-stage-card">
+          <div class="approach-stage-card nf-reveal nf-stagger-3">
             <div class="approach-stage-number">03</div>
             <h3 class="approach-stage-title">CREATE</h3>
             <p class="approach-stage-desc">
@@ -878,7 +894,7 @@
           </div>
 
           <!-- Stage 4: Evolve -->
-          <div class="approach-stage-card">
+          <div class="approach-stage-card nf-reveal nf-stagger-4">
             <div class="approach-stage-number">04</div>
             <h3 class="approach-stage-title">EVOLVE</h3>
             <p class="approach-stage-desc">
@@ -912,10 +928,35 @@
                 Whether you're starting something new or ready to grow what's next, we'd love to hear about it.
               </p>
 
-              <div class="contact-direct-actions">
+              <div class="contact-channels-list">
+                <a href="mailto:info@nexfable.in" class="contact-channel-item" aria-label="Email NexFable at info@nexfable.in">
+                  <span class="contact-channel-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </span>
+                  <span>
+                    <strong style="display:block; font-size:0.75rem; color:#A0A0B8; text-transform:uppercase; letter-spacing:0.06em;">Official Email</strong>
+                    <span>info@nexfable.in</span>
+                  </span>
+                </a>
+                <a href="tel:+918882370875" class="contact-channel-item" aria-label="Call NexFable at +91 8882370875">
+                  <span class="contact-channel-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </span>
+                  <span>
+                    <strong style="display:block; font-size:0.75rem; color:#A0A0B8; text-transform:uppercase; letter-spacing:0.06em;">Phone &amp; WhatsApp</strong>
+                    <span>+91 8882370875</span>
+                  </span>
+                </a>
+              </div>
+
+              <div class="contact-direct-actions" style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
                 <a href="https://wa.me/918882370875" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="display: inline-flex; width: fit-content; align-items: center; gap: 10px; padding: 14px 24px;">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.94 11.94 0 0 0 12.06 0C5.46 0 .09 5.37.09 11.97c0 2.11.55 4.17 1.6 5.99L0 24l6.22-1.63a11.9 11.9 0 0 0 5.84 1.51h.01c6.6 0 11.97-5.37 11.97-11.97 0-3.2-1.25-6.21-3.52-8.43zM12.07 21.87h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.64-.24-.38a9.92 9.92 0 0 1-1.52-5.27c0-5.48 4.46-9.94 9.94-9.94 2.65 0 5.15 1.03 7.02 2.91a9.88 9.88 0 0 1 2.91 7.02c0 5.48-4.46 9.91-9.96 9.91zm5.45-7.44c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/></svg>
                   <span>Chat on WhatsApp</span>
+                </a>
+                <a href="https://www.instagram.com/nex.fable/" target="_blank" rel="noopener noreferrer" class="social-pill-link" aria-label="Follow NexFable on Instagram">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                  <span>@nex.fable</span>
                 </a>
               </div>
             </div>
@@ -937,6 +978,12 @@
                 <div class="form-group" style="margin-bottom: 18px;">
                   <label class="form-label" for="contact-email" style="font-family: 'Syne', sans-serif; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #FFFFFF; display: block; margin-bottom: 6px;">Email *</label>
                   <input type="email" id="contact-email" name="email" class="form-control" placeholder="your@email.com" required>
+                </div>
+
+                <!-- Phone / WhatsApp (Optional) -->
+                <div class="form-group" style="margin-bottom: 18px;">
+                  <label class="form-label" for="contact-phone" style="font-family: 'Syne', sans-serif; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #A0A0B8; display: block; margin-bottom: 6px;">Phone / WhatsApp (Optional)</label>
+                  <input type="tel" id="contact-phone" name="phone" class="form-control" placeholder="+91 98765 43210">
                 </div>
 
                 <!-- Company / Brand (Optional) -->
@@ -987,7 +1034,7 @@
                   Thank you for reaching out. We've securely recorded your enquiry and will be in touch shortly to talk through your goals.
                 </p>
                 <div style="display: inline-block; background: rgba(255, 255, 255, 0.06); padding: 6px 14px; border-radius: 999px; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #CCFF00; margin-bottom: 20px;">
-                  Reference: <strong class="lead-id-code">GO-SUBMIT</strong>
+                  Reference: <strong class="lead-id-code">NF-SUBMIT</strong>
                 </div>
               </div>
 
@@ -1006,30 +1053,37 @@
   <footer class="site-footer" role="contentinfo" style="padding: 50px 0 30px 0; border-top: 1px solid rgba(255, 255, 255, 0.08);">
     <div class="container" style="display: flex; flex-direction: column; gap: 32px;">
 
-      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 32px;">
 
         <!-- Brand & Descriptor -->
         <div>
-          <a href="#hero" class="brand-logo footer-brand-logo" aria-label="Nexfable Home" style="margin-bottom: 8px;">
+          <a href="#hero" class="brand-logo footer-brand-logo" aria-label="NexFable Home" style="margin-bottom: 8px;">
             <span class="brand-logo-symbol">
-              <img src="public/images/nexfable-symbol.png" alt="" class="logo-symbol-img" width="53" height="30">
+              <img src="public/images/nexfable-symbol.png" alt="" class="logo-symbol-img" width="53" height="30" loading="lazy">
             </span>
             <span class="brand-logo-wordmark">
-              <img src="public/images/nexfable-wordmark.png" alt="Nexfable" class="logo-wordmark-img" width="124" height="24">
+              <img src="public/images/nexfable-wordmark.png" alt="NexFable" class="logo-wordmark-img" width="124" height="24" loading="lazy">
             </span>
           </a>
-          <p style="font-size: 0.9rem; color: #A0A0B8; margin: 10px 0 0 0;">
-            Creative thinking. Digital possibilities.
+          <p style="font-size: 0.9rem; color: #A0A0B8; margin: 10px 0 14px 0;">
+            NexFable &mdash; Creative thinking. Digital possibilities.
           </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 16px; font-size: 0.85rem;">
+            <a href="mailto:info@nexfable.in" style="color: #D7D1E0; text-decoration: none;">info@nexfable.in</a>
+            <a href="tel:+918882370875" style="color: #D7D1E0; text-decoration: none;">+91 8882370875</a>
+            <a href="https://www.instagram.com/nex.fable/" target="_blank" rel="noopener noreferrer" style="color: #FF55AD; text-decoration: none; font-weight: 600;">Instagram @nex.fable</a>
+          </div>
         </div>
 
-        <!-- Verified Navigation & WhatsApp Links -->
+        <!-- Verified Navigation & Legal Links -->
         <nav aria-label="Footer Navigation">
-          <ul style="display: flex; flex-wrap: wrap; gap: 24px; list-style: none; padding: 0; margin: 0;">
+          <ul style="display: flex; flex-wrap: wrap; gap: 20px; list-style: none; padding: 0; margin: 0;">
             <li><a href="/about" style="color: #A0A0B8; text-decoration: none; font-size: 0.9rem; transition: color 0.2s ease;">About</a></li>
-            <li><a href="#services" style="color: #A0A0B8; text-decoration: none; font-size: 0.9rem; transition: color 0.2s ease;">Services</a></li>
+            <li><a href="/services" style="color: #A0A0B8; text-decoration: none; font-size: 0.9rem; transition: color 0.2s ease;">Services</a></li>
             <li><a href="#approach" style="color: #A0A0B8; text-decoration: none; font-size: 0.9rem; transition: color 0.2s ease;">Our Approach</a></li>
-            <li><a href="#contact" style="color: #A0A0B8; text-decoration: none; font-size: 0.9rem; transition: color 0.2s ease;">Contact</a></li>
+            <li><a href="/contact" style="color: #A0A0B8; text-decoration: none; font-size: 0.9rem; transition: color 0.2s ease;">Contact</a></li>
+            <li><a href="/privacy-policy" style="color: #A0A0B8; text-decoration: none; font-size: 0.9rem; transition: color 0.2s ease;">Privacy Policy</a></li>
+            <li><a href="/terms" style="color: #A0A0B8; text-decoration: none; font-size: 0.9rem; transition: color 0.2s ease;">Terms</a></li>
             <li><a href="https://wa.me/918882370875" target="_blank" rel="noopener noreferrer" style="color: #CCFF00; text-decoration: none; font-size: 0.9rem; font-weight: 600;">Chat on WhatsApp</a></li>
           </ul>
         </nav>
@@ -1038,11 +1092,11 @@
 
       <!-- Copyright Notice -->
       <div style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 24px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
-        <span style="font-size: 0.82rem; color: #6B6B82;">
-          &copy; 2026 Nexfable. All rights reserved.
+        <span style="font-size: 0.82rem; color: #8A8AA3;">
+          &copy; 2026 NexFable. All rights reserved.
         </span>
-        <span style="font-size: 0.82rem; color: #6B6B82;">
-          Modern Digital Agency &amp; Growth Studio
+        <span style="font-size: 0.82rem; color: #8A8AA3;">
+          NexFable &bull; Web &amp; Mobile App Development &amp; Digital Marketing Agency &bull; nexfable.in
         </span>
       </div>
 

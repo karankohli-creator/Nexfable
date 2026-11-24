@@ -1,7 +1,7 @@
 {
-  "name": "growth-orbit-marketing",
-  "version": "2.0.0",
-  "description": "Growth Orbit Marketing - Real Estate Digital Marketing & Lead Generation Agency",
+  "name": "nexfable-website",
+  "version": "2.1.0",
+  "description": "NexFable - Official Web & Mobile App Development, UI/UX Design & Digital Marketing Agency",
   "main": "server.mjs",
   "type": "module",
   "scripts": {
@@ -9,15 +9,14 @@
     "dev": "node server.mjs"
   },
   "keywords": [
-    "real-estate-marketing",
-    "lead-generation",
-    "realtor-leads",
-    "meta-ads-real-estate",
-    "google-ads-realtors",
-    "real-estate-crm",
-    "growth-orbit-marketing"
+    "nexfable",
+    "web-development",
+    "mobile-app-development",
+    "ui-ux-design",
+    "seo-agency",
+    "digital-marketing"
   ],
-  "author": "Growth Orbit Marketing",
+  "author": "NexFable",
   "license": "UNLICENSED",
   "private": true
 }

@@ -29,8 +29,9 @@ function loadEnv() {
 loadEnv();
 
 const PORT = process.env.PORT || 3000;
-const SUPABASE_URL = process.env.SUPABASE_URL || 'https://zzvjxedrfngvnldlpjxt.supabase.co';
-const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inp6dmp4ZWRyZm5ndm5sZGxwanh0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTUxNjc3MTUsImV4cCI6MjExMDc0MzcxNX0.eDcz6eV7HI2vvHa5yDJtre30BM9UcoENnj7mkq2n4ts';
+const SUPABASE_URL = process.env.SUPABASE_URL || '';
+const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY || '';
+const ADMIN_API_KEY = process.env.ADMIN_API_KEY || '';
 
 // In-memory rate limiting (max 5 submissions per 10 minutes per IP)
 const ipRateLimits = new Map();
@@ -165,6 +166,8 @@ const server = http.createServer(async (req, res) => {
   res.setHeader('X-Content-Type-Options', 'nosniff');
   res.setHeader('X-Frame-Options', 'SAMEORIGIN');
   res.setHeader('Referrer-Policy', 'strict-origin-when-cross-origin');
+  res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
+  res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
 
   // Handle API routes
   if (pathname === '/api/contact' && req.method === 'POST') {
@@ -178,7 +181,7 @@ const server = http.createServer(async (req, res) => {
         res.writeHead(200, { 'Content-Type': 'application/json' });
         return res.end(JSON.stringify({
           success: true,
-          leadId: 'GO-' + Math.random().toString(36).substring(2, 8).toUpperCase(),
+          leadId: 'NF-' + Math.random().toString(36).substring(2, 8).toUpperCase(),
           message: 'Your inquiry has been received.'
         }));
       }
@@ -267,8 +270,8 @@ const server = http.createServer(async (req, res) => {
       }
 
       const leadId = supabaseRecord?.id
-        ? 'GO-' + supabaseRecord.id.slice(0, 8).toUpperCase()
-        : 'GO-' + Math.random().toString(36).substring(2, 8).toUpperCase();
+        ? 'NF-' + supabaseRecord.id.slice(0, 8).toUpperCase()
+        : 'NF-' + Math.random().toString(36).substring(2, 8).toUpperCase();
 
       leadRecord.id = leadId;
       leadRecord.supabaseId = supabaseRecord?.id || null;
@@ -281,7 +284,7 @@ const server = http.createServer(async (req, res) => {
         success: true,
         leadId,
         dbId: supabaseRecord?.id || null,
-        message: 'Your Strategy Call & Growth Audit request has been securely confirmed in Supabase! Our senior digital performance strategist will review your brand goals and reach out via WhatsApp/Call within 2 hours.'
+        message: 'Your inquiry has been securely received by NexFable! Our team will review your project goals and reach out shortly via WhatsApp, phone, or email.'
       }));
     } catch (err) {
       console.error('API /api/contact error:', err);
@@ -345,7 +348,7 @@ const server = http.createServer(async (req, res) => {
       res.writeHead(200, { 'Content-Type': 'application/json' });
       return res.end(JSON.stringify({
         success: true,
-        message: 'Welcome to Orbit Intelligence! You will receive our bi-weekly marketing performance dispatches.'
+        message: 'Welcome to NexFable Insights! You will receive our digital growth and engineering dispatches.'
       }));
     } catch (err) {
       res.writeHead(500, { 'Content-Type': 'application/json' });
@@ -354,6 +357,11 @@ const server = http.createServer(async (req, res) => {
   }
 
   if (pathname === '/api/leads' && req.method === 'GET') {
+    const providedKey = req.headers['x-admin-key'] || '';
+    if (!ADMIN_API_KEY || providedKey !== ADMIN_API_KEY) {
+      res.writeHead(403, { 'Content-Type': 'application/json' });
+      return res.end(JSON.stringify({ error: 'Forbidden' }));
+    }
     try {
       const filePath = path.join(DATA_DIR, 'leads.json');
       const content = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf8') : '[]';
@@ -365,15 +373,34 @@ const server = http.createServer(async (req, res) => {
     }
   }
 
+  // Block sensitive internal files, dotfiles, and directories from static serving
+  const lowerPath = pathname.toLowerCase();
+  const blockedSegments = ['/data/', '/node_modules/', '/.git/', '/.env'];
+  const blockedFiles = ['/server.mjs', '/package.json', '/package-lock.json', '/extract_logos.ps1', '/run_and_open.bat', '/.gitignore'];
+  if (
+    pathname.split('/').some(seg => seg.startsWith('.') && seg.length > 1) ||
+    blockedSegments.some(seg => lowerPath.startsWith(seg)) ||
+    blockedFiles.includes(lowerPath) ||
+    lowerPath.endsWith('.ps1') ||
+    lowerPath.endsWith('.bat') ||
+    lowerPath.endsWith('.log')
+  ) {
+    res.writeHead(403, { 'Content-Type': 'text/plain; charset=utf-8' });
+    return res.end('Access Denied');
+  }
+
   // Static File Resolution
-  let safePath = pathname;
+  let safePath = pathname.length > 1 && pathname.endsWith('/') ? pathname.slice(0, -1) : pathname;
   if (safePath === '/') {
     safePath = '/index.html';
   } else if (!path.extname(safePath)) {
-    // Check if direct .html file exists for clean URL
+    // Check if direct .html file or directory index.html exists for clean URL
     const possibleHtml = safePath + '.html';
+    const possibleIndex = path.join(safePath, 'index.html');
     if (fs.existsSync(path.join(__dirname, possibleHtml))) {
       safePath = possibleHtml;
+    } else if (fs.existsSync(path.join(__dirname, possibleIndex))) {
+      safePath = possibleIndex;
     } else if (fs.existsSync(path.join(__dirname, 'public', possibleHtml))) {
       safePath = '/public' + possibleHtml;
     }

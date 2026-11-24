@@ -4,13 +4,13 @@
   <!-- NexFable Official Homepage -->
   <url>
     <loc>https://nexfable.in/</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://nexfable.in/public/images/nexfable-horizontal.png</image:loc>
-      <image:title>NexFable - Web &amp; Mobile App Development &amp; Digital Growth | Official Website</image:title>
-      <image:caption>NexFable Digital Marketing Agency brand identity</image:caption>
+      <image:title>NexFable - Web &amp; Mobile App Development &amp; Digital Marketing Agency</image:title>
+      <image:caption>NexFable official brand identity</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://nexfable.in/public/images/nexfable-symbol.png</image:loc>
@@ -18,15 +18,85 @@
     </image:image>
   </url>
 
-  <!-- About NexFable Page -->
+  <!-- About NexFable -->
   <url>
     <loc>https://nexfable.in/about</loc>
-    <lastmod>2026-11-24</lastmod>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <image:image>
-      <image:loc>https://nexfable.in/public/images/nexfable-horizontal.png</image:loc>
-      <image:title>About NexFable - Web &amp; Mobile App Development Agency</image:title>
-    </image:image>
+  </url>
+
+  <!-- Services Hub -->
+  <url>
+    <loc>https://nexfable.in/services</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Individual Service Pages -->
+  <url>
+    <loc>https://nexfable.in/services/website-development</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nexfable.in/services/mobile-app-development</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nexfable.in/services/web-application-development</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nexfable.in/services/ui-ux-design</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nexfable.in/services/seo-services</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://nexfable.in/services/performance-marketing</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nexfable.in/services/social-media-management</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://nexfable.in/contact</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://nexfable.in/privacy-policy</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://nexfable.in/terms</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
 </urlset>

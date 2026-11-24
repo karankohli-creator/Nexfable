@@ -1,8 +1,8 @@
 /**
- * [AGENCY NAME] — MODERN DIGITAL AGENCY CONTROLLER
+ * NEXFABLE — MODERN DIGITAL AGENCY CONTROLLER
  * Architecture:
  * 1. Sticky Glassmorphic Navbar & Accessible Mobile Navigation Drawer
- * 2. Active Section Highlighting via IntersectionObserver
+ * 2. Active Section Highlighting & Scroll-Triggered Reveals via IntersectionObserver
  * 3. Supabase-Connected Contact Form Submission (/api/contact)
  * 4. Spam Honeypot Detection & Real-Time Input Validation
  * 5. Scroll-To-Top Controller
@@ -10,6 +10,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initNavbar();
+  initScrollReveals();
   initLeadForms();
   initScrollTop();
 });
@@ -47,11 +48,15 @@ function initNavbar() {
     hamburger?.classList.remove('active');
     hamburger?.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
+    hamburger?.focus();
   }
 
   hamburger?.addEventListener('click', toggleDrawer);
   drawerClose?.addEventListener('click', closeDrawer);
   mobileLinks.forEach(link => link.addEventListener('click', closeDrawer));
+
+  const overlay = document.querySelector('.mobile-drawer-overlay');
+  overlay?.addEventListener('click', closeDrawer);
 
   // Close on ESC key
   window.addEventListener('keydown', (e) => {
@@ -105,6 +110,7 @@ function initLeadForms() {
       const payload = {
         fullName: formData.get('fullName'),
         email: formData.get('email'),
+        phone: formData.get('phone') || '',
         businessName: formData.get('businessName') || '',
         service: formData.get('service') || 'Full-Service Digital Growth',
         notes: formData.get('notes') || '',
@@ -222,4 +228,32 @@ function initScrollTop() {
   btn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+}
+
+/* ==========================================================================
+   4. SCROLL-TRIGGERED REVEAL ANIMATIONS
+   ========================================================================== */
+function initScrollReveals() {
+  const revealEls = document.querySelectorAll('.nf-reveal');
+  if (revealEls.length === 0) return;
+
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReduced || !('IntersectionObserver' in window)) {
+    revealEls.forEach(el => el.classList.add('is-visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: '0px 0px -40px 0px'
+  });
+
+  revealEls.forEach(el => observer.observe(el));
 }

@@ -37,8 +37,6 @@
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@nexfable">
-  <meta name="twitter:creator" content="@nexfable">
   <meta name="twitter:title" content="About NexFable | Web & Mobile App Development & Digital Growth Studio">
   <meta name="twitter:description" content="Learn how NexFable blends custom web & mobile app development with performance marketing and SEO to engineer measurable brand growth.">
   <meta name="twitter:image" content="https://nexfable.in/public/images/nexfable-horizontal.png">
@@ -92,10 +90,14 @@
         "@type": "Organization",
         "@id": "https://nexfable.in/#organization",
         "name": "NexFable",
-        "alternateName": ["Nexfable", "NexFable Agency", "NexFable Digital"],
+        "alternateName": ["NexFable Agency", "NexFable Digital"],
         "url": "https://nexfable.in/",
+        "email": "info@nexfable.in",
         "logo": "https://nexfable.in/public/images/nexfable-horizontal.png",
-        "telephone": "+918882370875"
+        "telephone": "+918882370875",
+        "sameAs": [
+          "https://www.instagram.com/nex.fable/"
+        ]
       }
     ]
   }
@@ -117,20 +119,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/public/css/main.css">
-  <link rel="stylesheet" href="/public/css/oob-theme.css">
+  <link rel="stylesheet" href="/public/css/main.css?v=2">
+  <link rel="stylesheet" href="/public/css/oob-theme.css?v=3">
+  <link rel="stylesheet" href="/public/css/nexfable-enhancements.css?v=1">
 </head>
 <body class="bg-grid-pattern theme-space dark-mode">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- SITE HEADER -->
   <header class="site-header" role="banner">
     <div class="container nav-container">
-      <a href="/" class="brand-logo" aria-label="Nexfable Home">
+      <a href="/" class="brand-logo" aria-label="NexFable Home">
         <span class="brand-logo-symbol">
           <img src="/public/images/nexfable-symbol.png" alt="" class="logo-symbol-img" width="56" height="32">
         </span>
         <span class="brand-logo-wordmark">
-          <img src="/public/images/nexfable-wordmark.png" alt="Nexfable" class="logo-wordmark-img" width="135" height="26">
+          <img src="/public/images/nexfable-wordmark.png" alt="NexFable" class="logo-wordmark-img" width="135" height="26">
         </span>
       </a>
 
@@ -138,9 +143,9 @@
         <ul class="nav-menu">
           <li><a href="/" class="nav-link">Home</a></li>
           <li><a href="/about" class="nav-link active">About</a></li>
-          <li><a href="/#services" class="nav-link">Services</a></li>
+          <li><a href="/services" class="nav-link">Services</a></li>
           <li><a href="/#approach" class="nav-link">Our Approach</a></li>
-          <li><a href="/#contact" class="nav-link">Contact</a></li>
+          <li><a href="/contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
@@ -174,9 +179,9 @@
     <ul class="mobile-nav-list">
       <li><a href="/" class="mobile-nav-link">Home</a></li>
       <li><a href="/about" class="mobile-nav-link active">About Us</a></li>
-      <li><a href="/#services" class="mobile-nav-link">Services</a></li>
+      <li><a href="/services" class="mobile-nav-link">Services</a></li>
       <li><a href="/#approach" class="mobile-nav-link">Our Approach</a></li>
-      <li><a href="/#contact" class="mobile-nav-link">Contact</a></li>
+      <li><a href="/contact" class="mobile-nav-link">Contact</a></li>
     </ul>
     <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 12px;">
       <a href="/#contact" class="btn btn-primary" style="width: 100%; justify-content: center;">
@@ -198,29 +203,29 @@
             Our Story &amp; Mission
           </div>
           <h1 style="font-family: 'Syne', sans-serif; font-size: clamp(2.4rem, 4.5vw, 3.8rem); font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; text-transform: uppercase; color: #FFFFFF; margin-bottom: 1.5rem;">
-            We Built Nexfable To Solve <br>
-            <span class="gradient-text" style="background: linear-gradient(135deg, #FF55AD, #CCFF00); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">The Agency Problem.</span>
+            We Built NexFable To Solve <br>
+            <span class="gradient-text">The Agency Problem.</span>
           </h1>
           <p style="font-size: 1.15rem; line-height: 1.75; color: #D7D1E0; margin-bottom: 2.5rem;">
-            For too long, ambitious businesses faced an agonizing choice: work with traditional creative design agencies that win awards but don't understand balance sheets, or hire media buyers who set up generic ad accounts with zero creative spark. Nexfable was forged to bring both worlds together into a cohesive digital growth engine.
+            For too long, ambitious businesses faced an agonizing choice: work with traditional creative design agencies that overlook technical performance, or hire generic vendors who build cookie-cutter templates with zero strategic spark. NexFable brings engineering, design, and measurable digital growth together under one roof.
           </p>
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
-          <div class="glass-card" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 28px;">
-            <h3 style="font-size: 2.5rem; color: #CCFF00; margin-bottom: 0.5rem; font-family: 'Syne', sans-serif; font-weight: 800;" class="animated-counter" data-target="150" data-suffix="+">150+</h3>
-            <h4 style="margin-bottom: 0.5rem; color: #FFFFFF; font-family: 'Syne', sans-serif;">Growth Campaigns</h4>
-            <p style="font-size: 0.9rem; color: #A0A0B8; line-height: 1.5;">Scaled across D2C, B2B, premium lifestyle, and digital-first brands.</p>
+          <div class="glass-card nf-reveal nf-stagger-1" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 28px;">
+            <div style="font-size: 1.8rem; color: #CCFF00; margin-bottom: 0.75rem; font-family: 'JetBrains Mono', monospace; font-weight: 700;">01</div>
+            <h2 style="margin-bottom: 0.5rem; color: #FFFFFF; font-family: 'Syne', sans-serif; font-size: 1.25rem;">Custom Engineering</h2>
+            <p style="font-size: 0.92rem; color: #A0A0B8; line-height: 1.6; margin: 0;">Responsive websites, web applications, and mobile apps engineered for speed, security, and maintainability.</p>
           </div>
-          <div class="glass-card" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 28px;">
-            <h3 style="font-size: 2.5rem; color: #FF55AD; margin-bottom: 0.5rem; font-family: 'Syne', sans-serif; font-weight: 800;" class="animated-counter" data-target="45" data-prefix="₹" data-suffix="Cr+">₹45Cr+</h3>
-            <h4 style="margin-bottom: 0.5rem; color: #FFFFFF; font-family: 'Syne', sans-serif;">Client Revenue Tracked</h4>
-            <p style="font-size: 0.9rem; color: #A0A0B8; line-height: 1.5;">Directly attributed via server-side analytics, conversion APIs, and performance funnels.</p>
+          <div class="glass-card nf-reveal nf-stagger-2" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 28px;">
+            <div style="font-size: 1.8rem; color: #FF55AD; margin-bottom: 0.75rem; font-family: 'JetBrains Mono', monospace; font-weight: 700;">02</div>
+            <h2 style="margin-bottom: 0.5rem; color: #FFFFFF; font-family: 'Syne', sans-serif; font-size: 1.25rem;">Search &amp; AI Visibility</h2>
+            <p style="font-size: 0.92rem; color: #A0A0B8; line-height: 1.6; margin: 0;">Clean semantic HTML, structured data, Core Web Vitals optimization, and technical SEO built into every launch.</p>
           </div>
-          <div class="glass-card" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 28px;">
-            <h3 style="font-size: 2.5rem; color: #8F55FF; margin-bottom: 0.5rem; font-family: 'Syne', sans-serif; font-weight: 800;" class="animated-counter" data-target="94" data-suffix="%">94%</h3>
-            <h4 style="margin-bottom: 0.5rem; color: #FFFFFF; font-family: 'Syne', sans-serif;">Annual Partner Retention</h4>
-            <p style="font-size: 0.9rem; color: #A0A0B8; line-height: 1.5;">Because true performance eliminates the need to constantly pitch new clients.</p>
+          <div class="glass-card nf-reveal nf-stagger-3" style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 16px; padding: 28px;">
+            <div style="font-size: 1.8rem; color: #8F55FF; margin-bottom: 0.75rem; font-family: 'JetBrains Mono', monospace; font-weight: 700;">03</div>
+            <h2 style="margin-bottom: 0.5rem; color: #FFFFFF; font-family: 'Syne', sans-serif; font-size: 1.25rem;">Conversion-Focused UX</h2>
+            <p style="font-size: 0.92rem; color: #A0A0B8; line-height: 1.6; margin: 0;">Thoughtful interfaces, accessible journeys, and clear calls to action designed to turn visitors into qualified enquiries.</p>
           </div>
         </div>
       </div>
@@ -245,16 +250,16 @@
             </p>
             <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
               <div>
-                <strong style="color: #FFFFFF; display: block; font-size: 1.05rem; font-family: 'Syne', sans-serif;">WhatsApp Direct</strong>
-                <a href="https://wa.me/918882370875" target="_blank" rel="noopener noreferrer" style="font-size: 0.9rem; color: #CCFF00; text-decoration: none;">+91 8882370875</a>
+                <strong style="color: #FFFFFF; display: block; font-size: 1.05rem; font-family: 'Syne', sans-serif;">Official Email</strong>
+                <a href="mailto:info@nexfable.in" style="font-size: 0.9rem; color: #CCFF00; text-decoration: none;">info@nexfable.in</a>
               </div>
               <div>
-                <strong style="color: #FFFFFF; display: block; font-size: 1.05rem; font-family: 'Syne', sans-serif;">Official Domain</strong>
-                <span style="font-size: 0.9rem; color: #A0A0B8;">nexfable.in</span>
+                <strong style="color: #FFFFFF; display: block; font-size: 1.05rem; font-family: 'Syne', sans-serif;">Phone &amp; WhatsApp</strong>
+                <a href="tel:+918882370875" style="font-size: 0.9rem; color: #CCFF00; text-decoration: none;">+91 8882370875</a>
               </div>
               <div>
-                <strong style="color: #FFFFFF; display: block; font-size: 1.05rem; font-family: 'Syne', sans-serif;">Core Focus</strong>
-                <span style="font-size: 0.9rem; color: #A0A0B8;">Performance &amp; Growth</span>
+                <strong style="color: #FFFFFF; display: block; font-size: 1.05rem; font-family: 'Syne', sans-serif;">Instagram</strong>
+                <a href="https://www.instagram.com/nex.fable/" target="_blank" rel="noopener noreferrer" style="font-size: 0.9rem; color: #FF55AD; text-decoration: none;">@nex.fable</a>
               </div>
             </div>
           </div>
@@ -330,26 +335,27 @@
           </p>
         </div>
 
-        <!-- Verified Navigation & WhatsApp Links -->
+        <!-- Verified Navigation & Legal Links -->
         <nav aria-label="Footer Navigation">
-          <ul style="display: flex; flex-wrap: wrap; gap: 24px; list-style: none; padding: 0; margin: 0;">
-            <li><a href="/" style="color: #A0A0B8; text-decoration: none; font-size: 0.9rem; transition: color 0.2s ease;">Home</a></li>
+          <ul style="display: flex; flex-wrap: wrap; gap: 20px; list-style: none; padding: 0; margin: 0;">
+            <li><a href="/" style="color: #A0A0B8; text-decoration: none; font-size: 0.9rem;">Home</a></li>
             <li><a href="/about" style="color: #CCFF00; text-decoration: none; font-size: 0.9rem; font-weight: 600;">About</a></li>
-            <li><a href="/#services" style="color: #A0A0B8; text-decoration: none; font-size: 0.9rem; transition: color 0.2s ease;">Services</a></li>
-            <li><a href="/#approach" style="color: #A0A0B8; text-decoration: none; font-size: 0.9rem; transition: color 0.2s ease;">Our Approach</a></li>
-            <li><a href="/#contact" style="color: #A0A0B8; text-decoration: none; font-size: 0.9rem; transition: color 0.2s ease;">Contact</a></li>
-            <li><a href="https://wa.me/918882370875" target="_blank" rel="noopener noreferrer" style="color: #CCFF00; text-decoration: none; font-size: 0.9rem; font-weight: 600;">Chat on WhatsApp</a></li>
+            <li><a href="/services" style="color: #A0A0B8; text-decoration: none; font-size: 0.9rem;">Services</a></li>
+            <li><a href="/contact" style="color: #A0A0B8; text-decoration: none; font-size: 0.9rem;">Contact</a></li>
+            <li><a href="/privacy-policy" style="color: #A0A0B8; text-decoration: none; font-size: 0.9rem;">Privacy Policy</a></li>
+            <li><a href="/terms" style="color: #A0A0B8; text-decoration: none; font-size: 0.9rem;">Terms</a></li>
+            <li><a href="https://www.instagram.com/nex.fable/" target="_blank" rel="noopener noreferrer" style="color: #FF55AD; text-decoration: none; font-size: 0.9rem; font-weight: 600;">Instagram</a></li>
           </ul>
         </nav>
       </div>
 
       <!-- Copyright Notice -->
       <div style="border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 24px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
-        <span style="font-size: 0.82rem; color: #6B6B82;">
-          &copy; 2026 Nexfable. All rights reserved.
+        <span style="font-size: 0.82rem; color: #8A8AA3;">
+          &copy; 2026 NexFable. All rights reserved.
         </span>
-        <span style="font-size: 0.82rem; color: #6B6B82;">
-          Modern Digital Agency &amp; Growth Studio &bull; nexfable.in
+        <span style="font-size: 0.82rem; color: #8A8AA3;">
+          NexFable &bull; Web &amp; Mobile App Development &amp; Digital Agency &bull; nexfable.in
         </span>
       </div>
 

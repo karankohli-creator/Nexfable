@@ -4,7 +4,7 @@
    Reference: ourownbrand.co
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+/* Fonts are loaded via <link> in HTML for optimal LCP performance */
 
 :root {
   /* OOB Color System */
@@ -102,7 +102,7 @@ h1, h2, h3 {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #2D1B69 0%, #D91E85 50%, #FF6B35 100%) !important;
+  background: linear-gradient(135deg, #FF55AD 0%, #FF8A50 48%, #CCFF00 100%) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   background-clip: text !important;

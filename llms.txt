@@ -1,6 +1,6 @@
 # NexFable
 
-> NexFable (https://nexfable.in/) is an independent web and mobile app development, UI/UX design, SEO, and digital marketing agency. NexFable is an independent company and is not affiliated with similarly named businesses.
+> NexFable (https://nexfable.in/) is an independent digital agency delivering custom website development, mobile application engineering, UI/UX design, e-commerce systems, and digital marketing growth solutions for businesses, startups, and creators. NexFable is an independent business and is not affiliated with similarly named entities.
 
 ## Official Contact & Identity
 - Official Brand Name: NexFable
@@ -9,15 +9,26 @@
 - Phone & WhatsApp: +91 8882370875
 - Official Instagram: https://www.instagram.com/nex.fable/
 
+## Transparent Starting Pricing
+- Website Redesign: Starting from ₹4,999
+- High-Converting Landing Page: Starting from ₹5,000
+- Portfolio Website: Starting from ₹7,000
+- Full Business Website: Starting from ₹10,000
+- Custom Web Applications, Mobile Apps & E-Commerce: Tailored milestone scopes
+
 ## Core Pages
-- [Home](https://nexfable.in/): Overview of NexFable, core value propositions, services, process, and FAQs.
-- [About NexFable](https://nexfable.in/about): Company mission, engineering & growth philosophy, and agency creed.
-- [Services](https://nexfable.in/services): Full overview of NexFable digital capabilities.
-- [Website Development](https://nexfable.in/services/website-development): Custom responsive websites built for speed and technical SEO.
-- [Mobile App Development](https://nexfable.in/services/mobile-app-development): iOS and Android mobile application design and development.
-- [Web Application Development](https://nexfable.in/services/web-application-development): Custom portals, dashboards, and interactive web software.
-- [UI/UX Design](https://nexfable.in/services/ui-ux-design): Accessible user interfaces and design systems.
-- [SEO Services](https://nexfable.in/services/seo-services): White-hat technical SEO, structured data, and organic search visibility.
-- [Performance Marketing](https://nexfable.in/services/performance-marketing): Paid acquisition strategy and conversion optimization.
-- [Social Media Management](https://nexfable.in/services/social-media-management): Brand storytelling and social content calendars.
-- [Contact NexFable](https://nexfable.in/contact): Direct email, phone, WhatsApp, Instagram, and enquiry form.
+- [Home](https://nexfable.in/): Overview of NexFable technology and digital growth solutions, capabilities, approach, transparent pricing, and FAQs.
+- [About NexFable](https://nexfable.in/about): Company mission, engineering excellence, design philosophy, and agency creed.
+- [Portfolio & Capabilities](https://nexfable.in/portfolio): Verified architecture showcases (business platforms, client dashboards, e-commerce, mobile UX) with client confidentiality/NDA compliance.
+- [Pricing](https://nexfable.in/pricing): Transparent pricing packages, feature inclusions, and custom scoping breakdown.
+- [Start Your Project](https://nexfable.in/start-project): Interactive project scoping and consultation enquiry form.
+- [Contact NexFable](https://nexfable.in/contact): Direct email, phone, WhatsApp, and enquiry form.
+- [Services Hub](https://nexfable.in/services): Full suite of technology and digital growth capabilities.
+- [Custom Website Development](https://nexfable.in/services/website-development): Fast, mobile-first responsive business websites.
+- [Mobile App Development](https://nexfable.in/services/mobile-app-development): iOS and Android mobile applications.
+- [Web Applications & Dashboards](https://nexfable.in/services/web-application-development): Custom portals, internal tools, and SaaS MVPs.
+- [E-Commerce & Payments](https://nexfable.in/services/ecommerce-development): High-converting storefronts, carts, and payment integrations.
+- [UI/UX Design](https://nexfable.in/services/ui-ux-design): User journeys, wireframes, accessible design systems, and prototypes.
+- [SEO Services](https://nexfable.in/services/seo-services): White-hat technical SEO, JSON-LD schemas, and organic growth.
+- [Performance Marketing](https://nexfable.in/services/performance-marketing): Google & Meta paid advertising with dedicated landing pages.
+- [Social Media Management](https://nexfable.in/services/social-media-management): Brand storytelling and social content strategy.

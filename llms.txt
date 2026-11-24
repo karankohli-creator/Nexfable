@@ -1,0 +1,23 @@
+# NexFable
+
+> NexFable (https://nexfable.in/) is an independent web and mobile app development, UI/UX design, SEO, and digital marketing agency. NexFable is an independent company and is not affiliated with similarly named businesses.
+
+## Official Contact & Identity
+- Official Brand Name: NexFable
+- Official Website: https://nexfable.in/
+- Email: info@nexfable.in
+- Phone & WhatsApp: +91 8882370875
+- Official Instagram: https://www.instagram.com/nex.fable/
+
+## Core Pages
+- [Home](https://nexfable.in/): Overview of NexFable, core value propositions, services, process, and FAQs.
+- [About NexFable](https://nexfable.in/about): Company mission, engineering & growth philosophy, and agency creed.
+- [Services](https://nexfable.in/services): Full overview of NexFable digital capabilities.
+- [Website Development](https://nexfable.in/services/website-development): Custom responsive websites built for speed and technical SEO.
+- [Mobile App Development](https://nexfable.in/services/mobile-app-development): iOS and Android mobile application design and development.
+- [Web Application Development](https://nexfable.in/services/web-application-development): Custom portals, dashboards, and interactive web software.
+- [UI/UX Design](https://nexfable.in/services/ui-ux-design): Accessible user interfaces and design systems.
+- [SEO Services](https://nexfable.in/services/seo-services): White-hat technical SEO, structured data, and organic search visibility.
+- [Performance Marketing](https://nexfable.in/services/performance-marketing): Paid acquisition strategy and conversion optimization.
+- [Social Media Management](https://nexfable.in/services/social-media-management): Brand storytelling and social content calendars.
+- [Contact NexFable](https://nexfable.in/contact): Direct email, phone, WhatsApp, Instagram, and enquiry form.

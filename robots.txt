@@ -1,14 +1,32 @@
-# robots.txt for Nexfable — https://nexfable.in/
-# Authoritative instructions for search engine crawlers
+# robots.txt for NexFable — https://nexfable.in/
+# Authoritative instructions for search engine and AI search crawlers
 
 User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /data/
-
-# Prohibit crawling of private/temp files
 Disallow: /*.json$
 Disallow: /*.env$
+
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /data/
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+Disallow: /data/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/
+Disallow: /data/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /data/
 
 # Search Engine Sitemaps
 Sitemap: https://nexfable.in/sitemap.xml

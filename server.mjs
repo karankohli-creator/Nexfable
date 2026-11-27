@@ -169,6 +169,38 @@ const server = http.createServer(async (req, res) => {
   res.setHeader('Permissions-Policy', 'camera=(), microphone=(), geolocation=()');
   res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
 
+  // 301 Permanent Redirects for deprecated/legacy pages & URLs
+  const redirects = {
+    '/pricing': '/contact',
+    '/pricing.html': '/contact',
+    '/portfolio': '/services',
+    '/portfolio.html': '/services',
+    '/start-project': '/contact',
+    '/start-project.html': '/contact',
+    '/services/seo-services': '/services/seo-lead-generation',
+    '/services/seo-services.html': '/services/seo-lead-generation',
+    '/services/ecommerce-development': '/services/website-development',
+    '/services/ecommerce-development.html': '/services/website-development',
+    '/services/web-application-development': '/services/website-development',
+    '/services/web-application-development.html': '/services/website-development',
+    '/services/mobile-app-development': '/services/website-development',
+    '/services/mobile-app-development.html': '/services/website-development',
+    '/services/social-media-management': '/services/performance-marketing',
+    '/services/social-media-management.html': '/services/performance-marketing',
+    '/services/ui-ux-design': '/services/website-development',
+    '/services/ui-ux-design.html': '/services/website-development'
+  };
+
+  const normalizedLookupPath = pathname.length > 1 && pathname.endsWith('/') ? pathname.slice(0, -1) : pathname;
+  if (redirects[pathname] || redirects[normalizedLookupPath]) {
+    const dest = redirects[pathname] || redirects[normalizedLookupPath];
+    res.writeHead(301, {
+      'Location': dest,
+      'Cache-Control': 'public, max-age=31536000'
+    });
+    return res.end();
+  }
+
   // Handle API routes
   if (pathname === '/api/contact' && req.method === 'POST') {
     try {

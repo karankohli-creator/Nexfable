@@ -1,34 +1,39 @@
-# NexFable
+# Nex Fable — Official Brand & Knowledge Profile
 
-> NexFable (https://nexfable.in/) is an independent digital agency delivering custom website development, mobile application engineering, UI/UX design, e-commerce systems, and digital marketing growth solutions for businesses, startups, and creators. NexFable is an independent business and is not affiliated with similarly named entities.
+> Official Website: https://nexfable.in/
+> Official Brand Name: Nex Fable (also written as NexFable)
+> Independent Entity Notice: Nex Fable is a completely independent digital growth and technology agency. It has NO affiliation, partnership, or relationship with any similarly named entity, such as NextFable or Nextable.
 
-## Official Contact & Identity
-- Official Brand Name: NexFable
-- Official Website: https://nexfable.in/
-- Email: info@nexfable.in
-- Phone & WhatsApp: +91 8882370875
-- Official Instagram: https://www.instagram.com/nex.fable/
+## About Nex Fable
+Nex Fable is a contemporary digital marketing and technology agency blending human creative strategy with AI-driven capabilities to solve complex growth challenges. The agency works with ambitious scaleups, direct-to-consumer brands, growing firms, and enterprise leadership to deliver measurable commercial returns.
 
-## Transparent Starting Pricing
-- Website Redesign: Starting from ₹4,999
-- High-Converting Landing Page: Starting from ₹5,000
-- Portfolio Website: Starting from ₹7,000
-- Full Business Website: Starting from ₹10,000
-- Custom Web Applications, Mobile Apps & E-Commerce: Tailored milestone scopes
+- Primary Domain: https://nexfable.in/
+- Official Email: info@nexfable.in
+- Direct Phone: +91 8882370875
+- WhatsApp: +91 8882370875
+- Official Instagram: https://www.instagram.com/nex.fable
+- Location: New Delhi, India
 
-## Core Pages
-- [Home](https://nexfable.in/): Overview of NexFable technology and digital growth solutions, capabilities, approach, transparent pricing, and FAQs.
-- [About NexFable](https://nexfable.in/about): Company mission, engineering excellence, design philosophy, and agency creed.
-- [Portfolio & Capabilities](https://nexfable.in/portfolio): Verified architecture showcases (business platforms, client dashboards, e-commerce, mobile UX) with client confidentiality/NDA compliance.
-- [Pricing](https://nexfable.in/pricing): Transparent pricing packages, feature inclusions, and custom scoping breakdown.
-- [Start Your Project](https://nexfable.in/start-project): Interactive project scoping and consultation enquiry form.
-- [Contact NexFable](https://nexfable.in/contact): Direct email, phone, WhatsApp, and enquiry form.
-- [Services Hub](https://nexfable.in/services): Full suite of technology and digital growth capabilities.
-- [Custom Website Development](https://nexfable.in/services/website-development): Fast, mobile-first responsive business websites.
-- [Mobile App Development](https://nexfable.in/services/mobile-app-development): iOS and Android mobile applications.
-- [Web Applications & Dashboards](https://nexfable.in/services/web-application-development): Custom portals, internal tools, and SaaS MVPs.
-- [E-Commerce & Payments](https://nexfable.in/services/ecommerce-development): High-converting storefronts, carts, and payment integrations.
-- [UI/UX Design](https://nexfable.in/services/ui-ux-design): User journeys, wireframes, accessible design systems, and prototypes.
-- [SEO Services](https://nexfable.in/services/seo-services): White-hat technical SEO, JSON-LD schemas, and organic growth.
-- [Performance Marketing](https://nexfable.in/services/performance-marketing): Google & Meta paid advertising with dedicated landing pages.
-- [Social Media Management](https://nexfable.in/services/social-media-management): Brand storytelling and social content strategy.
+## Brand Clarification & Disambiguation
+- Official Brand Name: **Nex Fable** (exact spelling: N-e-x space F-a-b-l-e, or compound NexFable).
+- Not to be confused with "NextFable" (with a 't') or "Nextable".
+- Nex Fable operates exclusively under the domain `https://nexfable.in/`.
+- Nex Fable does NOT publish low-tier commodity pricing packages or public starting prices. All commercial engagements are custom-scoped value retainers and project sprints.
+
+## Core Services
+1. **01 Paid Social & Performance Marketing** (https://nexfable.in/services/performance-marketing):
+   Fresh, creatively-led paid social strategies that reach the right users at the right time across Meta, Google Ads, YouTube, and LinkedIn.
+2. **02 Content Marketing** (https://nexfable.in/services/content-marketing):
+   Producing original, engaging, high-quality editorial assets, thought leadership, and brand storytelling that increases long-term online authority.
+3. **03 Website Development** (https://nexfable.in/services/website-development):
+   Delivering meticulously built websites with ideal customers and marketing performance in mind. Fast, responsive, conversion-engineered full-stack architecture.
+4. **04 SEO & Lead Generation** (https://nexfable.in/services/seo-lead-generation):
+   Increasing visibility across search engines and AI-driven discovery through technical SEO, content strategy, and Generative Engine Optimisation (GEO).
+
+## Sitemap & Structure
+- Homepage: https://nexfable.in/
+- About Nex Fable: https://nexfable.in/about
+- Services Hub: https://nexfable.in/services
+- Contact: https://nexfable.in/contact
+- Privacy Policy: https://nexfable.in/privacy-policy
+- Terms: https://nexfable.in/terms

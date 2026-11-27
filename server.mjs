@@ -191,6 +191,11 @@ const server = http.createServer(async (req, res) => {
     '/services/ui-ux-design.html': '/services/website-development'
   };
 
+  // Support Bing verification fallback if user registered sitemap.xml as site
+  if (pathname === '/sitemap.xml/BingSiteAuth.xml') {
+    pathname = '/BingSiteAuth.xml';
+  }
+
   const normalizedLookupPath = pathname.length > 1 && pathname.endsWith('/') ? pathname.slice(0, -1) : pathname;
   if (redirects[pathname] || redirects[normalizedLookupPath]) {
     const dest = redirects[pathname] || redirects[normalizedLookupPath];
